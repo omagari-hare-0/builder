@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - name: Launch VM
-        users: vmactions/freebsd-vm@v1
+        uses: vmactions/freebsd-vm@v1
         with:
           usesh: true
           run: |
